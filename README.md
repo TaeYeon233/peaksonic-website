@@ -48,3 +48,23 @@ peaksonic-clone/
 - `index.html` - 修改内容和结构
 - `css/style.css` - 修改样式和颜色
 - `js/script.js` - 修改交互行为
+
+## 部署
+
+### 本地部署到服务器
+
+1. 使用提供的部署脚本：
+   ```bash
+   ./deploy.sh [服务器IP] [用户名]
+   ```
+
+### 服务器端部署
+
+1. 将 `server-deploy.sh` 上传到服务器
+2. 在服务器上运行：
+   ```bash
+   chmod +x server-deploy.sh
+   ./server-deploy.sh
+   ```
+
+脚本将自动下载最新版本的网站并部署到 `/var/www/peaksonic.studio` 目录。
